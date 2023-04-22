@@ -1,3 +1,14 @@
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
+**Table of Contents**
+
+- [Gunpla Store](#gunpla-store)
+    - [Reason to build this project](#reason-to-build-this-project)
+    - [Stack](#stack)
+    - [Services](#services)
+    - [Diagrams](#diagrams)
+    - [Database](#database)
+
+<!-- markdown-toc end -->
 
 
 
@@ -27,6 +38,10 @@ Currently i'm going to use `GO` as main language, with `MongoDB` as database, `A
 At first i was thinking about using ELK (ElasticSearch, Logstash, Kibana) stack for the architecture, but i drop the idea
 
 ## Services
+
+- bff
+
+Service *Backend For Frontend (BFF)* handle all requests from frontend to backend systems
 
 - User
 
