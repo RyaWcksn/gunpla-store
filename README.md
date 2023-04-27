@@ -22,7 +22,7 @@ I want to learn and try _Event Driven Architecture_ microservice for keep up to 
 
 ## Stack
 
-Currently i'm going to use `GO` as main language, with `MongoDB` as database, `Apache Kafka` for message broker, `Docker` for containerization, `Docker Compose` for container orchestration tool (i was thinking to use `Kubernete` or `K3s` for the orchestration tool), `Datadog` for distributed tracing tool
+Currently i'm going to use `GO` as main language, with `MongoDB` as database, `Apache Kafka` for message broker, `Docker` for containerization, `Docker Compose` for container orchestration tool (i was thinking to use `Kubernete` or `K3s` for the orchestration tool), `Datadog` for distributed tracing tool, `Mailhog` for email testing purpose, `Xendit` for payment gateway
 
 **Summary**
 
@@ -32,6 +32,8 @@ Currently i'm going to use `GO` as main language, with `MongoDB` as database, `A
 - `Docker`
 - `Docker Compose`
 - `Datadog`
+- `Mailhog`
+- `Xendit`
 
 **Footnote**
 
@@ -39,7 +41,7 @@ At first i was thinking about using ELK (ElasticSearch, Logstash, Kibana) stack 
 
 ## Services
 
-- bff
+- Bff
 
 Service *Backend For Frontend (BFF)* handle all requests from frontend to backend systems
 
@@ -59,10 +61,22 @@ Product service would handle the management of product information, including de
 
 This service would be responsible for managing the order process, including accepting and processing orders, tracking order status, and handling payment processing
 
+- Generic
+
+Service for collecting data for other service needs
+
+- Mail
+
+ Service for sending emails to the customers; such as `OrderCreated` `OrderSuccess`etc
+
 
 ## Diagrams
 
 *TO BE ANNOUNCE*
+
+```
+
+```
 
 ## Database
 
